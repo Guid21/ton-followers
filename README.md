@@ -7,4 +7,4 @@
 
 Авторы:
 `telegram:` [Alex](https://t.me/F7vn_3)
-`telegram:` [Tim](https://t.me/get_user_name)
+[Tim](https://t.me/get_user_name)

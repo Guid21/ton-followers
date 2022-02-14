@@ -5,6 +5,8 @@
 
 Этот скрипт написан на коленке для статьи, мы сами не используем его и никого не призываем к подобным действиям, так это нарушает правила [Ton.place](https://ton.place/)
 
+[статья на VC.ru](https://vc.ru/u/367535-alex-favn/365406-na-volne-haypa-pishem-ton-place-bota-dlya-masslaykinga)
+
 Авторы:
 `telegram:` [Alex](https://t.me/F7vn_3),
 [Tim](https://t.me/get_user_name)

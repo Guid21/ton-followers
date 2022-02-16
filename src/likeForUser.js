@@ -19,19 +19,25 @@ const isUser = async (page, message, startingId) => {
     await fs.appendFile('./ids.json', `${startingId}\n`);
     const subscribeElement = await page.$(selector);
     await page.waitForTimeout(randomInteger(400, 500));
-    const selectorText = await page.evaluate(
-      (el) => el.textContent,
-      subscribeElement
-    );
-    console.log(selectorText);
-    if (selectorText == 'Подписаться' || 'Подписаться в ответ')
-      await subscribeElement.click();
-    await page.waitForTimeout(randomInteger(400, 500));
+    // const selectorText = await page.evaluate(
+    //   (el) => el.textContent,
+    //   subscribeElement
+    // );
+    // console.log(selectorText);
+    // if (selectorText == 'Подписаться' || 'Подписаться в ответ')
+    //   await subscribeElement.click();
+    // await page.waitForTimeout(randomInteger(400, 500));
 
     // massLikes(page);
-    const likedElement = await page.$$(likedSelector);
-    await likedElement[0].click();
-    await page.waitForTimeout(randomInteger(1200, 1300));
+    try {
+      const likedElement = await page.$$(likedSelector);
+      await likedElement[0].click();
+      await page.waitForTimeout(randomInteger(1200, 1300));
+    } catch (err) {
+      console.log(err); // TypeError: failed to fetch
+    }
+    // await likedElement[0].click();
+    // await page.waitForTimeout(randomInteger(1200, 1300));
   }
 };
 

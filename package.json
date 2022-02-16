@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "dependencies": {
+    "node-fetch": "^3.2.0",
     "puppeteer": "^13.3.2"
   },
   "devDependencies": {},

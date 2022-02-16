@@ -9,6 +9,9 @@ const saveCookies = (page) => {
   }, 30 * 1000);
 };
 
+const min = 26172;
+const max = 27000;
+
 /**
  * Кликаем по кнопочкам / Clicking the buttons
  *
@@ -31,7 +34,7 @@ async function getPic() {
   await page.goto('https://ton.place/feed');
 
   // перезаписываем наши куки каждые 30 секунд / overwrite our cookies every 30 seconds
-  await loop(26172, 27000, page);
+  await loop(min, max, page);
   saveCookies(page);
 }
 
